@@ -26,8 +26,25 @@ composer require donmbelembe/laravel-facebook-catalog
 ## Usage
 
 ```php
-$laravelFacebookCatalog = new Donmbelembe\LaravelFacebookCatalog();
-echo $laravelFacebookCatalog->echoPhrase('Hello, Donmbelembe!');
+use Donmbelembe\LaravelFacebookCatalog\LaravelFacebookCatalog;
+
+LaravelFacebookCatalog::setTitle('Example feed');
+LaravelFacebookCatalog::setDescription('Example feed of the Example shop');
+LaravelFacebookCatalog::setLink('https://example.shop');
+
+LaravelFacebookCatalog::addItem([
+    'link' => 'https://example.shop/p/foo-bar',
+    'id' => 'SKU123',
+    'title' => 'Foo bar',
+    'image_link' => 'https://example.shop/images/foo-bar.png',
+    'description' => 'Foo bar best product',
+    'availability' => 'new',
+    // "price" => 99.99,
+    'brand' => 'Foo brand',
+    'condition' => 'new',
+]);
+
+return LaravelFacebookCatalog::display();
 ```
 
 An example of the expected array

@@ -2,9 +2,9 @@
 
 namespace Donmbelembe\LaravelFacebookCatalog\Tests;
 
+use Donmbelembe\LaravelFacebookCatalog\LaravelFacebookCatalogServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Donmbelembe\LaravelFacebookCatalog\LaravelFacebookCatalogServiceProvider;
 
 class TestCase extends Orchestra
 {

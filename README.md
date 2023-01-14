@@ -78,6 +78,7 @@ An example of the expected array
     "shipping_weight"                => null,
 ]
 ```
+For more details => https://web.facebook.com/business/help/120325381656392?id=725943027795860
 
 ## Testing
 

@@ -23,37 +23,51 @@ You can install the package via composer:
 composer require donmbelembe/laravel-facebook-catalog
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="laravel-facebook-catalog-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="laravel-facebook-catalog-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="laravel-facebook-catalog-views"
-```
-
 ## Usage
 
 ```php
 $laravelFacebookCatalog = new Donmbelembe\LaravelFacebookCatalog();
 echo $laravelFacebookCatalog->echoPhrase('Hello, Donmbelembe!');
+```
+
+An example of the expected array
+
+```php
+[
+    "id" 	            		    => "", // Unique Example SKU
+    "title" 	            		    => "", // Max 150 Characters
+    "description"            	    => "",
+    "availability"           	    => "in stock", // values: in stock, available for order, out of stock
+    "condition" 	            	    => "new", // values: new, refurbished, used
+    "price" 		            	    => 0.00,
+    "link"		                    => "",
+    "image_link"		                => "",
+    "brand" 		            	    => "",
+    // required fileds for payments in USA only and optional everywhere else
+    "quantity_to_sell_on_facebook"   => 10, // previously name "inventory"
+    "google_product_category"        => "",
+    "fb_product_category"            => null,
+    "size"                           => null,
+    // required in india and optional everywhere else
+    "origin_country"                 => null, // Ex: US
+    "importer_name"                  => null, // if the origin country is not INDIA
+    "importer_address"               => null,
+    "manufacturer_info"              => null,
+    "wa_compliance_category"         => null,
+    // Optional fields
+    "sale_price"                     => null,
+    "sale_price_effective_date"      => null,
+    "item_group_id"                  => null,
+    "status"                         => null, // Values: active, archived (or staging)
+    "additional_image_link"          => null,
+    "gender"                         => null,
+    "color"                          => null,
+    "age_group"                      => null, // Values: adult, all ages, teen, kids, todler, infant, newborn.
+    "material" 	                    => null,
+    "patern"	                        => null,
+    "shipping"                       => null,
+    "shipping_weight"                => null,
+]
 ```
 
 ## Testing

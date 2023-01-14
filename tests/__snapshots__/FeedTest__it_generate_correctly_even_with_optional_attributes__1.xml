@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
+  <channel>
+    <title>Example feed</title>
+    <description>Example feed of the Example shop</description>
+    <link>https://example.shop</link>
+    <item>
+      <link>https://example.shop/p/foo-bar?utm_source=facebook&amp;utm_medium=facebookCatalog&amp;utm_campaign=</link>
+      <id>SKU123</id>
+      <title>Foo bar</title>
+      <image_link>https://example.shop/images/foo-bar.png</image_link>
+      <description>Foo bar best product</description>
+      <availability>new</availability>
+      <price>99.99 USD</price>
+      <brand>Foo brand</brand>
+      <condition>new</condition>
+      <age_group>teen</age_group>
+    </item>
+  </channel>
+</rss>

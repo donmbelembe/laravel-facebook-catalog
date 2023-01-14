@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Donmbelembe\LaravelFacebookCatalog\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelFacebookCatalogCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-facebook-catalog';
 
     public $description = 'My command';
 

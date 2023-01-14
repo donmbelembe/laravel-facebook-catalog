@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "donmbelembe/laravel-facebook-catalog",
+    "description": "Laravel Facebook Catalog Package that exports formatted XML data feed",
     "keywords": [
-        ":vendor_name",
+        "donmbelembe",
         "laravel",
-        ":package_slug"
+        "laravel-facebook-catalog"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/donmbelembe/laravel-facebook-catalog",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "don mbelembe",
+            "email": "bizroy678@gmail.com",
             "role": "Developer"
         }
     ],
@@ -30,18 +30,17 @@
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
-        "phpunit/phpunit": "^9.5",
-        "spatie/laravel-ray": "^1.26"
+        "phpunit/phpunit": "^9.5"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Donmbelembe\\LaravelFacebookCatalog\\": "src",
+            "Donmbelembe\\LaravelFacebookCatalog\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Donmbelembe\\LaravelFacebookCatalog\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -61,10 +60,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Donmbelembe\\LaravelFacebookCatalog\\LaravelFacebookCatalogServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "LaravelFacebookCatalog": "Donmbelembe\\LaravelFacebookCatalog\\Facades\\LaravelFacebookCatalog"
             }
         }
     },
